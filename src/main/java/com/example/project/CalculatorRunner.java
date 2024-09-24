@@ -31,6 +31,3 @@ public class CalculatorRunner {
         System.out.println(calculator.info());
     }
 }
-
-
-

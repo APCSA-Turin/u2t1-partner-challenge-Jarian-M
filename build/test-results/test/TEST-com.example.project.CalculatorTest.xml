@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.project.CalculatorTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-09-24T13:30:16" hostname="codespaces-3a0917" time="0.116">
+<testsuite name="com.example.project.CalculatorTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2024-09-24T22:39:36" hostname="codespaces-3a0917" time="0.104">
   <properties/>
-  <testcase name="testDivisibleByFalse()" classname="com.example.project.CalculatorTest" time="0.035"/>
-  <testcase name="testInfo()" classname="com.example.project.CalculatorTest" time="0.03"/>
+  <testcase name="testDivisibleByFalse()" classname="com.example.project.CalculatorTest" time="0.02"/>
+  <testcase name="testInfo()" classname="com.example.project.CalculatorTest" time="0.027"/>
   <testcase name="testDivisibleByTrue()" classname="com.example.project.CalculatorTest" time="0.001"/>
-  <testcase name="testCoordinatePair()" classname="com.example.project.CalculatorTest" time="0.016"/>
-  <testcase name="testPerformOperationMultiplication()" classname="com.example.project.CalculatorTest" time="0.002"/>
-  <testcase name="testPerformOperationNone()" classname="com.example.project.CalculatorTest" time="0.002"/>
-  <testcase name="testPerformOperationAddition()" classname="com.example.project.CalculatorTest" time="0.0"/>
+  <testcase name="testCoordinatePair()" classname="com.example.project.CalculatorTest" time="0.018"/>
+  <testcase name="testPerformOperationMultiplication()" classname="com.example.project.CalculatorTest" time="0.003"/>
+  <testcase name="testPerformOperationNone()" classname="com.example.project.CalculatorTest" time="0.001"/>
+  <testcase name="testPerformOperationAddition()" classname="com.example.project.CalculatorTest" time="0.001"/>
   <testcase name="testPerformOperationSubtraction()" classname="com.example.project.CalculatorTest" time="0.001"/>
-  <testcase name="testAbsoluteValue()" classname="com.example.project.CalculatorTest" time="0.003"/>
-  <testcase name="testPerformOperationDivision()" classname="com.example.project.CalculatorTest" time="0.003"/>
+  <testcase name="testAbsoluteValue()" classname="com.example.project.CalculatorTest" time="0.001"/>
+  <testcase name="testPerformOperationDivision()" classname="com.example.project.CalculatorTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
