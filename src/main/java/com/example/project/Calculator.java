@@ -1,52 +1,49 @@
 package com.example.project;
+
 public class Calculator{
     private String calcModel;
-    
-    //constructor that creates an instance of the calculator class
-    public Calculator() {
-        //implement code here
+
+    // Constructor
+    public Calculator(String calcType) {
+        calcModel = calcType; 
     }
-    
-    // method that performs the operation designated by operand (which
-    // could be +, -, *, or /) and returns the result of that operation
-    // performed between num1 and num2
-    // NOTE: if operand is some String other than "+", "-", "*", or "/" then
-    // this method should return 0
-    // REMINDER: use .equals to test if one string is equal to another (not ==)
-    // (THIS METHOD DOES NOT PRINT)
-    public double performOperation(String operand, int num1, int num2) {
-        //implement code here
-        return 0.00;
+   
+    public double performOperation(String operand, int n1, int n2) {
+        switch (operand) {
+            case "+":
+                return n1 + n2;
+            case "-":
+                return n1 - n2;
+            case "*":
+                return n1 * n2;
+            case "/":
+                if (n2 != 0) {
+                    return (double) n1 / n2;
+                } else {
+                    return 0.00;
+                }
+            default:
+                return 0.00;
+        }
     }
 
-    // method that checks if num1 is evenly divisible by num2, and if so,
-    // returns true, and if not, returns false
-    // (THIS METHOD DOES NOT PRINT)
-    public boolean divisibleBy(int num1, int num2) {
-        //implement code here
-        return false;
+   public boolean divisibleBy(int n1, int n2) {
+        if (n2 == 0) {
+            return false;  // Division by zero is undefined
+        }
+        return n1 % n2 == 0;
     }
 
-    // method that constructs and returns a string representing a coordinate
-    // pair in the format: "(x, y)"
-    // (THIS METHOD DOES NOT PRINT)
     public String coordinatePair(int x, int y) {
-        //implement code here
-        return "";
+        return "(" + x + "," + y + ")";
     }
-    // method that determines and returns the result of |num1 - num2|
-    // (THIS METHOD DOES NOT PRINT)
-    public int absoluteValue(int num1, int num2) {
-        //implement code here
-        return 0;
+
+    public int absoluteValue(int n1, int n2) {
+        return Math.abs(n1 - n2);
     }
-    
-    // method that constructs and returns a String in the format:
-    // "This calculator is a model "+____+" where "+____+" should be filled in
-    // with the value stored in the calcModel instance variable."
-    // (THIS METHOD DOES NOT PRINT)
+
+    // Method that returns the model information of the calculator
     public String info() {
-        //implement code here
-        return "";
+        return "This calculator is a model " + calcModel + " where " + calcModel + " should be filled in with the value stored in the calcModel instance variable.";
     }
 }
